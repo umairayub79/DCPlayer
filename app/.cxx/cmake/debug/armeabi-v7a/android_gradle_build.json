@@ -1,0 +1,56 @@
+{
+  "stringTable": {
+    "0": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/.cxx/cmake/debug/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot -Dmqplayer_EXPORTS -I/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/yuv/include -I/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security -O0 -fno-limit-debug-info -fPIC"
+  },
+  "buildFiles": [
+    "/home/umairayub/Android/Sdk/ndk/21.3.6528147/build/cmake/android.toolchain.cmake",
+    "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/CMakeLists.txt",
+    "/home/umairayub/Android/Sdk/ndk/21.3.6528147/build/cmake/platforms.cmake"
+  ],
+  "cleanCommands": [
+    "/home/umairayub/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/.cxx/cmake/debug/armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "/home/umairayub/Android/Sdk/cmake/3.10.2.4988404/bin/ninja  -C \"/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/.cxx/cmake/debug/armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "mqplayer-Debug-armeabi-v7a": {
+      "buildCommand": "/home/umairayub/Android/Sdk/cmake/3.10.2.4988404/bin/ninja -C \"/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/.cxx/cmake/debug/armeabi-v7a\" mqplayer",
+      "buildType": "debug",
+      "toolchain": "869984775",
+      "abi": "armeabi-v7a",
+      "artifactName": "mqplayer",
+      "files": [
+        {
+          "src": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_video_decoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_library.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libmqplayer.so",
+      "runtimeFiles": [
+        "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/libs/ffmpeg/armeabi-v7a/libffmpeg.so",
+        "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/libs/yuv/armeabi-v7a/libyuv.a"
+      ]
+    }
+  },
+  "toolchains": {
+    "869984775": {
+      "cppCompilerExecutable": "/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

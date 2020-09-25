@@ -1,0 +1,79 @@
+ninja: Entering directory `/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/.cxx/cmake/debug/armeabi-v7a'
+[1/4] Building CXX object CMakeFiles/mqplayer.dir/ffmpeg_library.cpp.o
+[2/4] Building CXX object CMakeFiles/mqplayer.dir/ffmpeg_audio_decoder.cpp.o
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp:76:3: warning: 'avcodec_register_all' is deprecated [-Wdeprecated-declarations]
+  avcodec_register_all();
+  ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavcodec/avcodec.h:4087:1: note: 'avcodec_register_all' has been explicitly marked deprecated here
+attribute_deprecated
+^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp:252:25: warning: 'avresample_alloc_context' is deprecated [-Wdeprecated-declarations]
+      resampleContext = avresample_alloc_context();
+                        ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavresample/avresample.h:193:1: note: 'avresample_alloc_context' has been explicitly marked deprecated here
+attribute_deprecated
+^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp:261:16: warning: 'avresample_open' is deprecated [-Wdeprecated-declarations]
+      result = avresample_open(resampleContext);
+               ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavresample/avresample.h:213:1: note: 'avresample_open' has been explicitly marked deprecated here
+attribute_deprecated
+^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp:271:22: warning: 'avresample_get_out_samples' is deprecated [-Wdeprecated-declarations]
+    int outSamples = avresample_get_out_samples(resampleContext, sampleCount);
+                     ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavresample/avresample.h:402:1: note: 'avresample_get_out_samples' has been explicitly marked deprecated here
+attribute_deprecated
+^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp:279:14: warning: 'avresample_convert' is deprecated [-Wdeprecated-declarations]
+    result = avresample_convert(resampleContext, &outputBuffer, bufferOutSize,
+             ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavresample/avresample.h:450:1: note: 'avresample_convert' has been explicitly marked deprecated here
+attribute_deprecated
+^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp:287:21: warning: 'avresample_available' is deprecated [-Wdeprecated-declarations]
+    int available = avresample_available(resampleContext);
+                    ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavresample/avresample.h:493:1: note: 'avresample_available' has been explicitly marked deprecated here
+attribute_deprecated
+^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp:312:5: warning: 'avresample_free' is deprecated [-Wdeprecated-declarations]
+    avresample_free(&resampleContext);
+    ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavresample/avresample.h:257:1: note: 'avresample_free' has been explicitly marked deprecated here
+attribute_deprecated
+^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+7 warnings generated.
+[3/4] Building CXX object CMakeFiles/mqplayer.dir/ffmpeg_video_decoder.cpp.o
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_video_decoder.cpp:84:5: warning: 'avcodec_register_all' is deprecated [-Wdeprecated-declarations]
+    avcodec_register_all();
+    ^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavcodec/avcodec.h:4087:1: note: 'avcodec_register_all' has been explicitly marked deprecated here
+attribute_deprecated
+^
+/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include/libavutil/attributes.h:94:49: note: expanded from macro 'attribute_deprecated'
+#    define attribute_deprecated __attribute__((deprecated))
+                                                ^
+1 warning generated.
+[4/4] Linking CXX shared library /home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libmqplayer.so

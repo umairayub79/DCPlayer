@@ -1,0 +1,19 @@
+[
+{
+  "directory": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dmqplayer_EXPORTS -I/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/yuv/include -I/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/mqplayer.dir/ffmpeg_video_decoder.cpp.o -c /home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_video_decoder.cpp",
+  "file": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_video_decoder.cpp"
+},
+
+{
+  "directory": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dmqplayer_EXPORTS -I/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/yuv/include -I/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/mqplayer.dir/ffmpeg_audio_decoder.cpp.o -c /home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp",
+  "file": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_audio_decoder.cpp"
+},
+
+{
+  "directory": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/.cxx/cmake/debug/armeabi-v7a",
+  "command": "/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/umairayub/Android/Sdk/ndk/21.3.6528147/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -Dmqplayer_EXPORTS -I/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/yuv/include -I/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/../../../libs/ffmpeg/include  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -march=armv7-a -mthumb -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC   -o CMakeFiles/mqplayer.dir/ffmpeg_library.cpp.o -c /home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_library.cpp",
+  "file": "/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/src/main/jni/ffmpeg_library.cpp"
+}
+]

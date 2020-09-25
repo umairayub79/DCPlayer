@@ -1,0 +1,5 @@
+# ninja log v5
+41	6267	1599772231	CMakeFiles/mqplayer.dir/ffmpeg_library.cpp.o	ae7ed7070faf22d6
+35	6291	1599772231	CMakeFiles/mqplayer.dir/ffmpeg_audio_decoder.cpp.o	e1f593a9c8753cb
+35	6356	1599772231	CMakeFiles/mqplayer.dir/ffmpeg_video_decoder.cpp.o	829a0a597f22076
+6356	7573	1599772232	/home/umairayub/Desktop/Projects/Android/DCVideoPlayer/app/build/intermediates/cmake/debug/obj/armeabi-v7a/libmqplayer.so	35e200327a928e31

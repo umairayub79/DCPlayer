@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="codes.umair.dcvideoplayer">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:requestLegacyExternalStorage="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activities.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.VideoListActivity"
+            android:parentActivityName=".activities.MainActivity"/>
+
+        <activity
+            android:name=".activities.PlayerActivity"
+            android:configChanges="orientation|keyboardHidden|screenLayout|screenSize"
+            android:theme="@style/PlayerTheme" >
+
+            <intent-filter android:label="@string/app_name">
+                <action android:name="android.intent.action.SEND" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:mimeType="video/*" />
+            </intent-filter>
+
+            <!-- by file extension -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+
+
+                <!-- mp4 / fmp4 -->
+                <data android:pathPattern=".*\\.mp4" />
+                <data android:pathPattern=".*\\.m4v" />
+                <data android:pathPattern=".*\\.m4a" />
+
+                <!-- mpeg-ts / mpeg-ps -->
+                <data android:pathPattern=".*\\.mpeg" />
+                <data android:pathPattern=".*\\.mpeg1" />
+                <data android:pathPattern=".*\\.mpeg2" />
+                <data android:pathPattern=".*\\.mpeg3" />
+                <data android:pathPattern=".*\\.mpeg4" />
+
+                <!-- webm -->
+                <data android:pathPattern=".*\\.webm" />
+
+                <!-- matroska -->
+                <data android:pathPattern=".*\\.mkv" />
+                <data android:pathPattern=".*\\.mka" />
+
+<!--                &lt;!&ndash; amr &ndash;&gt;-->
+<!--                <data android:pathPattern=".*\\.amr" />-->
+
+<!--                &lt;!&ndash; adts(aac) &ndash;&gt;-->
+<!--                <data android:pathPattern=".*\\.aac" />-->
+
+<!--                &lt;!&ndash; ogg &ndash;&gt;-->
+<!--                <data android:pathPattern=".*\\.ogg" />-->
+<!--                <data android:pathPattern=".*\\.ogv" />-->
+<!--                <data android:pathPattern=".*\\.oga" />-->
+
+<!--                &lt;!&ndash; flv &ndash;&gt;-->
+<!--                <data android:pathPattern=".*\\.flv" />-->
+<!--                <data android:pathPattern=".*\\.f4v" />-->
+
+                <!-- 3gp -->
+                <data android:pathPattern=".*\\.3gp" />
+                <data android:pathPattern=".*\\.3g2" />
+                <data android:pathPattern=".*\\.3gpp" />
+
+
+            </intent-filter>
+
+
+            <!-- by mimetype -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="file" />
+                <data android:scheme="content" />
+                <data android:host="*" />
+
+                <!-- any -->
+                <data android:mimeType="video/*" />
+                <!-- <data android:mimeType="application/*"/> -->
+
+                <!-- mp4 -->
+                <data android:mimeType="video/mp4" />
+                <data android:mimeType="application/mp4" />
+
+                <!-- fmp4 -->
+                <data android:mimeType="video/x-extension-mp4" />
+                <data android:mimeType="application/x-extension-mp4" />
+
+                <!-- mpeg-ts / mpeg-ps -->
+                <data android:mimeType="video/mpeg*" />
+                <data android:mimeType="application/mpeg*" />
+                <data android:mimeType="video/mpeg1" />
+                <data android:mimeType="application/mpeg1" />
+                <data android:mimeType="video/mpeg2" />
+                <data android:mimeType="application/mpeg2" />
+                <data android:mimeType="video/mpeg3" />
+                <data android:mimeType="application/mpeg3" />
+                <data android:mimeType="video/mpeg4" />
+                <data android:mimeType="application/mpeg4" />
+
+                <!-- webm -->
+                <data android:mimeType="video/webm" />
+                <data android:mimeType="application/webm" />
+
+                <!-- matroska -->
+                <data android:mimeType="video/x-matroska" />
+                <data android:mimeType="application/x-matroska" />
+
+<!--                &lt;!&ndash; ogg &ndash;&gt;-->
+<!--                <data android:mimeType="video/ogg" />-->
+<!--                <data android:mimeType="application/ogg" />-->
+
+<!--                &lt;!&ndash; wav &ndash;&gt;-->
+<!--                <data android:mimeType="application/wav" />-->
+<!--                <data android:mimeType="application/x-wav" />-->
+
+
+<!--                &lt;!&ndash; flv &ndash;&gt;-->
+<!--                <data android:mimeType="video/x-flv" />-->
+<!--                <data android:mimeType="application/x-flv" />-->
+
+                <!-- 3gp -->
+                <data android:mimeType="video/3gpp" />
+                <data android:mimeType="application/3gpp" />
+                <data android:mimeType="video/3gpp2" />
+                <data android:mimeType="application/3gpp2" />
+            </intent-filter>
+        </activity>
+
+        <!-- FileProvider - a ContentProvider for making the image file securely available to the other end -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="codes.umair.dcvideoplayer.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true" >
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

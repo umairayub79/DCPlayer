@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">DCVideoPlayer</string>
+    <string name="track_selection_title">Audio tracks</string>
+    <string name="sub_track_selection_title">Subtitle tracks</string>
+    <string name="log_tracks">Log track info to logcat</string>
+    <string name="storage_permission_denied">Permission to access storage was denied</string>
+    <string name="error_unsupported_video">Unable to Play this Video</string>
+    <string name="error_unsupported_audio">Media includes audio tracks, but none are playable by this device</string>
+</resources>
